@@ -24,11 +24,11 @@ app.post('/inputmsg',function(request,response){
 	res.on('end', function() {
 		
         console.log(" Attribute : " + (request.body.result.parameters.attribute));
-		var speech = "Your answer is received.";
+		//var speech = "Your answer is received.";
 					     
 		return response.json({
-			speech: speech,
-			displayText: speech,
+			speech: "Your answer is received.",
+			displayText: "Your answer is received.",
 			source: 'poc4'
 		});
 
