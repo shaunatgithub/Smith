@@ -20,19 +20,16 @@ app.post('/inputmsg',function(request,response){
     var recordNameURL = (request.body.result.parameters.any).trim().replace( / /g, "%20" );
     console.log("recordNameURL :" + recordNameURL);
 	
-	
-	res.on('end', function() {
 		
         console.log(" Attribute : " + (request.body.result.parameters.attribute));
 		//var speech = "Your answer is received.";
 					     
-		return response.json({
-			speech: "Your answer is received.",
-			displayText: "Your answer is received.",
-			source: 'poc4'
-		});
+	return response.json({
+		speech: "Your answer is received.",
+		displayText: "Your answer is received.",
+		source: 'poc4'
+	});
 
-		});
 
 	request.on('error', function(error) {
 		console.log(error);
