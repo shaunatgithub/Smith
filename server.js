@@ -1,6 +1,6 @@
 var http = require('http');
-var fs = require('fs'),
-express = require('express'),
+var fs = require('fs');
+express = require('express');
 path = require('path');
 
 var app = express();
