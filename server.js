@@ -18,7 +18,7 @@ app.post('/inputmsg',function(request,response){
 	
 	
     var recordNameURL = (request.body.result.parameters.any).trim().replace( / /g, "%20" );
-    console.log("recordNameURL :" + recordNameURL)
+    console.log("recordNameURL :" + recordNameURL);
 	
 	
 	res.on('end', function() {
